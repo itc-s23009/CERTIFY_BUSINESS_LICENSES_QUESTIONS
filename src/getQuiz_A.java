@@ -3,17 +3,17 @@ import java.util.Random;
 class getQuiz_A implements Quiz {
     private static final String[] QUIZZES = {
             """
-Javaのプログラミングを実行するには、JVM(Java Virtual Machine)が必要である。
+(2)Javaのプログラミングを実行するには、JVM(Java Virtual Machine)が必要である。
 
 ア:正しい        イ:誤り
 """,
             """
-Javaアプレットとは、Webブラウザ上で実行されるJavaのプログラミングのことである。
+(4)Javaアプレットとは、Webブラウザ上で実行されるJavaのプログラミングのことである。
 
 ア:正しい        イ:誤り
 """,
             """
-Javaでは、プログラム内部で文字を表すのにUnicode標準を使用している。
+(5)Javaでは、プログラム内部で文字を表すのにUnicode標準を使用している。
 
 ア:正しい        イ:誤り
 """

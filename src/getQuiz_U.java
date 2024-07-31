@@ -3,7 +3,7 @@ import java.util.Random;
 class getQuiz_U implements Quiz {
     private static final String[] QUIZZES = {
             """
-次のプログラムをコンパイル及び実行した結果として、正しいものはどれか。
+(18)次のプログラムをコンパイル及び実行した結果として、正しいものはどれか。
 
 class Q18 {
     public static void main(String[] args) {
@@ -16,7 +16,19 @@ class Q18 {
 }
 
 解答群
+　ア ６行目でコンパイルエラーが起こる。
+　イ コンパイル及び実行され、[9] が表示される。
+　ウ コンパイル及び実効され、[10.5] が表示される。
+　エ コンパイル及び実効され、[12.0] が表示される。
+""",
+            """
+(19)コードとして、正しいものはどれか。
 
+解答群
+　ア int array1 = new int[5];
+　イ int[] array2 = new int[5];
+　ウ int[] array3 = new int[5];
+　エ　 int[] array4 = new int[][5];
 """
     };
 

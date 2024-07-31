@@ -3,7 +3,7 @@ import java.util.Random;
 class getQuiz_E implements Quiz {
     private static final String[] QUIZZES = {
             """
-次のプログラムをコンパイル及び実行した結果として、正しいものはどれか。
+(17)次のプログラムをコンパイル及び実行した結果として、正しいものはどれか。
 
 class Q17 {
     public static void main (String[] args) {
