@@ -4,7 +4,6 @@ class getQuiz_E implements Quiz {
     private static final String[] QUIZZES = {
             """
 (17)次のプログラムをコンパイル及び実行した結果として、正しいものはどれか。
-
 class Q17 {
     public static void main (String[] args) {
     int n = 35;
@@ -45,6 +44,12 @@ public class Q27 {
     }
 
     public boolean answer(String quiz) {
-        return quiz.equals("エ") || quiz.equals("ェ") || quiz.equals("え") || quiz.equals("e") || quiz.equals("E");
+        if (quiz.equals("エ") || quiz.equals("ェ") || quiz.equals("え") || quiz.equals("e") || quiz.equals("E")) {
+            return true;
+        } else {
+            System.out.println("不正解\n正解は エ");
+            return false;
+        }
     }
 }
+

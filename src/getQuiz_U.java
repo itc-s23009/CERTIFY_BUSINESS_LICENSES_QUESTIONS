@@ -4,7 +4,6 @@ class getQuiz_U implements Quiz {
     private static final String[] QUIZZES = {
             """
 (18)次のプログラムをコンパイル及び実行した結果として、正しいものはどれか。
-
 class Q18 {
     public static void main(String[] args) {
         double baseValue = 3.5;
@@ -23,7 +22,6 @@ class Q18 {
 """,
             """
 (19)コードとして、正しいものはどれか。
-
 解答群
 　ア int array1 = new int[5];
 　イ int[] array2 = new int[5];
@@ -32,7 +30,6 @@ class Q18 {
 """,
             """
 (20)次のプログラムをコンパイル及び実行した結果として、正しいものはどれか。ここで、\nプログラム中の文字コード[0x30]は文字の[0]を示す。
-
 class Q20 {
     public static void main(String[] args) {
         char c = 0x30;
@@ -49,7 +46,6 @@ class Q20 {
 """,
             """
 (25)次のプログラム中の、[ a ] に当てはまるものとして、正しいものはどれか。
-
 class Q25 {
     String code;
     public static void main(String[] args) {
@@ -77,6 +73,13 @@ class Q25 {
     }
 
     public boolean answer(String quiz) {
-        return quiz.equals("ウ") || quiz.equals("ゥ") || quiz.equals("う") || quiz.equals("u") || quiz.equals("U");
+        if(quiz.equals("ウ") || quiz.equals("ゥ") || quiz.equals("う") || quiz.equals("u") || quiz.equals("U")){
+            return true;
+        }else {
+            System.out.println("不正解\n 正解は ウ");
+            return false;
+        }
     }
+
+
 }

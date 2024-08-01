@@ -19,7 +19,6 @@ class getQuiz_I implements Quiz {
 """,
             """
 (21)次のプログラムをコンパイル及び実効した結果として、正しいものはどれか。
-
 class Q21 {
     public static void main(String[] args) {
         int x, y = 25;
@@ -37,9 +36,7 @@ class Q21 {
 """,
             """
 (22)次のプログラムをコンパイル及び実行した結果として、ただしものはどれか。
-
 enum Connection {OFFLINE, ONLINE}
-
 class Q22 {
     public static void main(String[] args) {
     Connection s = OFFLINE;
@@ -57,6 +54,7 @@ class Q22 {
 　エ コンパイル及び実効され、[ONLINE] が表示される。
 """,
             """
+(23)次のプログラムをコンパイル及び実効した結果として、正しいものはどれか。
 class Q23 {
     public static void main(String[] args) {
         int i = 1;
@@ -80,7 +78,6 @@ class Q23 {
 """,
             """
 (24)次のプログラムをコンパイル及び実効した結果として、正しいものはどれか。
-
 class Q24 {
     public static void main(String[] args) {
         for (int i = 0; i < 9; i++) {
@@ -126,6 +123,11 @@ class Q26 {
     }
 
     public boolean answer(String quiz) {
-        return quiz.equals("イ") || quiz.equals("ィ") || quiz.equals("い") || quiz.equals("i") || quiz.equals("I");
+        if (quiz.equals("イ") || quiz.equals("ィ") || quiz.equals("い") || quiz.equals("i") || quiz.equals("I")) {
+            return true;
+        }else {
+            System.out.println("不正解\n 正解は イ");
+            return false;
+        }
     }
 }

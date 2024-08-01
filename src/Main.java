@@ -17,6 +17,7 @@ public class Main {
         while (count < 5){
             Quiz getQuiz = quizzes[rand.nextInt(quizzes.length)];
             String question = getQuiz.getRandomQuiz();
+            System.out.println();
             System.out.println(question);
             String input = scanner.nextLine();
             if (input.equals("end")){
@@ -24,10 +25,10 @@ public class Main {
             } else {
                 boolean correct = getQuiz.answer(input);
                 if (correct) {
-                    System.out.println("正解");
+                    System.out.println("正解\n");
                     answer++;
                 } else {
-                    System.out.println("不正解");
+
                 }
             }
             count++;

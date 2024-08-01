@@ -27,6 +27,11 @@ class getQuiz_A implements Quiz {
     }
 
     public boolean answer(String quiz) {
-        return quiz.equals("ア") || quiz.equals("ァ") || quiz.equals("あ") || quiz.equals("a") || quiz.equals("A");
+       if (quiz.equals("ア") || quiz.equals("ァ") || quiz.equals("あ") || quiz.equals("a") || quiz.equals("A")){
+           return true;
+       }else {
+           System.out.println("不正解\n 正解は ア");
+           return false;
+       }
     }
 }
