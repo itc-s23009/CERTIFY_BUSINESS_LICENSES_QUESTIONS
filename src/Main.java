@@ -5,9 +5,11 @@ import java.util.Scanner;
 // ガターの <icon src="AllIcons.Actions.Execute"/> アイコンをクリックします。
 public class Main {
     public static void main(String[] args) {
-        System.out.println("第４８回Javaプログラミング能力認定試験 ３級");
         Scanner scanner = new Scanner(System.in);
-        Quiz[] quizzes ={new getQuiz_1(), new getQuiz_2(), new getQuiz_3(), new getQuiz_4()};
+        System.out.println("第４８回Javaプログラミング能力認定試験 ３級");
+        System.out.println("問題は５問ランダムに出題されます。選択肢で答えて下さい。 \nEnterを押してスタートです。");
+        String s = scanner.nextLine();
+        Quiz[] quizzes ={new getQuiz_A(), new getQuiz_I(), new getQuiz_U(), new getQuiz_E()};
         Random rand = new Random();
 
         int count = 0;
@@ -37,75 +39,5 @@ public class Main {
     }
 }
 
-interface Quiz {
-    String getRandomQuiz();
-    boolean answer(String input);
-}
 
-class getQuiz_1  implements Quiz {
-    private static final String[] QUIZZES = {
-            "What is the capital of France?",
 
-    };
-
-    private Random random = new Random();
-
-    @Override
-    public String getRandomQuiz() {
-        return QUIZZES[random.nextInt(QUIZZES.length)];
-    }
-
-    public boolean answer(String quiz) {
-        return quiz.equals("1");
-    }
-}
-
-class getQuiz_2  implements Quiz {
-    private static final String[] QUIZZES = {
-            "What is 2 + 2?",
-    };
-
-    private Random random = new Random();
-
-    @Override
-    public String getRandomQuiz() {
-        return QUIZZES[random.nextInt(QUIZZES.length)];
-    }
-
-    public boolean answer(String quiz) {
-        return quiz.equals("2");
-    }
-}
-class getQuiz_3  implements Quiz {
-    private static final String[] QUIZZES = {
-            "What is the largest ocean on Earth?",
-    };
-
-    private Random random = new Random();
-
-    @Override
-    public String getRandomQuiz() {
-        return QUIZZES[random.nextInt(QUIZZES.length)];
-    }
-
-    public boolean answer(String quiz) {
-        return quiz.equals("3");
-    }
-}
-
-class getQuiz_4  implements Quiz {
-    private static final String[] QUIZZES = {
-            "What is the chemical symbol for water?"
-    };
-
-    private Random random = new Random();
-
-    @Override
-    public String getRandomQuiz() {
-        return QUIZZES[random.nextInt(QUIZZES.length)];
-    }
-
-    public boolean answer(String quiz) {
-        return quiz.equals("4");
-    }
-}
