@@ -36,6 +36,18 @@ class getQuiz_A implements Quiz {
     @Override
     public String Explanation(int quizNumber) {
         HashMap<Integer, String> hmap = new HashMap<>();
+        hmap.put(2, """
+                Javaプログラムを実行するには、JVM(Java Virtual Machine. Java仮想マシン)が必要である。
+                Javaアプリケーションの場合は、Javaコマンドを実行することにより、JVMを起動している。
+                """);
+        hmap.put(4, """
+                Webブラウザ上で実行されるJavaのプログラムはJavaアプレットと呼ばれ、
+                通常のアプリケーションとは作成方法、実行方法が異なる。
+                """);
+        hmap.put(5, """
+                Javaは、プログラム内部で文字を表すのにUnicode標準を採用している。外部との入出力にそれ以外の
+                文字コードを使うこともでき変換を行うライブラリが用意されている。
+                """);
         return hmap.get(quizNumber);
     }
 
