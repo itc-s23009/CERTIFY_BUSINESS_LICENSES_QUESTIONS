@@ -1,16 +1,12 @@
-import java.util.HashMap;
-import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 //TIP コードを<b>実行</b>するには、<shortcut actionId="Run"/> を押すか
 // ガターの <icon src="AllIcons.Actions.Execute"/> アイコンをクリックします。
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("第４８回Javaプログラミング能力認定試験 ３級");
+        System.out.println("");
         System.out.println("問題は５問ランダムに出題されます。選択肢で答えて下さい。 \nEnterを押してスタートです。");
         String s = scanner.nextLine();
         Quiz[] quizzes = {new getQuiz_A(), new getQuiz_I(), new getQuiz_U(), new getQuiz_E()};

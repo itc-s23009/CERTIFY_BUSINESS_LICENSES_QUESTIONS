@@ -6,19 +6,6 @@ import java.util.regex.Pattern;
 class getQuiz_A implements Quiz {
     private static final String[] QUIZZES = {
             """
-2 Javaのプログラミングを実行するには、JVM(Java Virtual Machine)が必要である。
-
-ア:正しい        イ:誤り
-""",
-            """
-4 Javaアプレットとは、Webブラウザ上で実行されるJavaのプログラミングのことである。
-
-ア:正しい        イ:誤り
-""",
-            """
-5 Javaでは、プログラム内部で文字を表すのにUnicode標準を使用している。
-
-ア:正しい        イ:誤り
 """
     };
 
@@ -36,30 +23,7 @@ class getQuiz_A implements Quiz {
     @Override
     public String Explanation(int quizNumber) {
         HashMap<Integer, String> hmap = new HashMap<>();
-        hmap.put(2, """
-                不正解
-                正解はア
-                
-                解説
-                Javaプログラムを実行するには、JVM(Java Virtual Machine. Java仮想マシン)が必要である。
-                Javaアプリケーションの場合は、Javaコマンドを実行することにより、JVMを起動している。
-                """);
-        hmap.put(4, """
-                不正解
-                正解はア
-                
-                解説
-                Webブラウザ上で実行されるJavaのプログラムはJavaアプレットと呼ばれ、
-                通常のアプリケーションとは作成方法、実行方法が異なる。
-                """);
-        hmap.put(5, """
-                不正解
-                正解はア
-                
-                解説
-                Javaは、プログラム内部で文字を表すのにUnicode標準を採用している。外部との入出力にそれ以外の
-                文字コードを使うこともでき変換を行うライブラリが用意されている。
-                """);
+
         return hmap.get(quizNumber);
     }
 
