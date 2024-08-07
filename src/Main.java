@@ -9,6 +9,7 @@ import java.util.regex.Pattern;
 // ガターの <icon src="AllIcons.Actions.Execute"/> アイコンをクリックします。
 public class Main {
     public static void main(String[] args) {
+        // 第４８街Javaプログラムング能力検定試験３級
         Scanner scanner = new Scanner(System.in);
         System.out.println("第４８回Javaプログラミング能力認定試験 ３級");
         System.out.println("問題は５問ランダムに出題されます。選択肢で答えて下さい。 \nEnterを押してスタートです。");
