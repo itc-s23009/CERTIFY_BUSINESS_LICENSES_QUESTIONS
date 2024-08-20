@@ -27,9 +27,9 @@ class Q18 {
 19 コードとして、正しいものはどれか。
 解答群
 　ア int array1 = new int[5];
-　イ int[] array2 = new int[5];
+　イ int[] array2 = int[5];
 　ウ int[] array3 = new int[5];
-　エ　 int[] array4 = new int[][5];
+　エ int[] array4 = new int[][5];
 """,
             """
 20 次のプログラムをコンパイル及び実行した結果として、正しいものはどれか。ここで、\nプログラム中の文字コード[0x30]は文字の[0]を示す。

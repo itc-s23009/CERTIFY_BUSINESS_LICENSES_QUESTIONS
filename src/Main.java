@@ -12,14 +12,14 @@ public class Main {
         // 第４８街Javaプログラムング能力検定試験３級
         Scanner scanner = new Scanner(System.in);
         System.out.println("第４８回Javaプログラミング能力認定試験 ３級");
-        System.out.println("問題は５問ランダムに出題されます。選択肢で答えて下さい。 \nEnterを押してスタートです。");
+        System.out.println("問題は３７問ランダムに出題されます。選択肢で答えて下さい。 \nEnterを押してスタートです。");
         String s = scanner.nextLine();
         Quiz[] quizzes = {new getQuiz_A(), new getQuiz_I(), new getQuiz_U(), new getQuiz_E()};
         Random rand = new Random();
 
         int count = 0;
         int answer = 0;
-        while (count < 5) {
+        while (count < 37) {
             Quiz getQuiz = quizzes[rand.nextInt(quizzes.length)];
             String question = getQuiz.getRandomQuiz();
             System.out.println();
